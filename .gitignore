@@ -1,0 +1,36 @@
+# General Ignores + IDE
+.DS_Store
+settings.xml
+WEB-INF
+build/**
+
+# Engines + Database + CBFS + Secrets
+.tmp/**
+
+.engine/**
+.cbfs/**
+docker/.db/**
+
+# Vite
+/public/includes/build/**
+
+# logs + tests
+app/logs/**
+runtime/logs/**
+tests/results/**
+
+# npm
+**/node_modules/*
+npm-debug.log
+yarn-error.log
+
+## Ignored Dependencies
+.devcontainer/.db/**
+effective-pom.xml
+
+## Global Libs
+lib/**
+!lib/java/
+!lib/java/.gitkeep
+!lib/modules/
+!lib/modules/.gitkeep

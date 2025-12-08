@@ -1,0 +1,82 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates
+{
+	"name": "ColdBox BoxLang App",
+
+	"dockerComposeFile": [
+		"./docker-compose.yml"
+	],
+
+	"service": "coldbox_app",
+
+	"mounts": [
+		"source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind"
+	],
+
+	"workspaceFolder": "/app",
+
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	"features": {
+		"ghcr.io/devcontainers/features/node:1": {
+			"nodeGypDependencies": true,
+			"version": "lts"
+		},
+		"ghcr.io/devcontainers/features/git:1": {},
+		"ghcr.io/devcontainers/features/common-utils:2": {
+			"installZsh": true,
+			"configureZshAsDefaultShell": true,
+			"installOhMyZsh": true
+		}
+	},
+
+	// Use 'postStartCommand' to run commands after the container is created.
+	"postStartCommand": "box install",
+
+	// Configure tool-specific properties.
+	"customizations": {
+		"codespaces": {
+            "openFiles": [
+                "readme.md"
+            ]
+        },
+		"vscode": {
+			"settings": {
+				"files.associations": {
+					"*.bx": "boxlang",
+					"*.bxm": "boxlang",
+					"*.bxs": "boxlang"
+				},
+				"boxlang.cfml.engine": "boxlang",
+				"boxlang.cfml.cfcEngine": "boxlang",
+				"editor.formatOnSave": true,
+				"editor.tabSize": 4,
+				"editor.insertSpaces": false,
+				"terminal.integrated.defaultProfile.linux": "zsh"
+			},
+			"extensions": [
+				"ortus-solutions.vscode-boxlang-developer-pack",
+				"ortus-solutions.vscode-coldbox",
+				"ms-vscode.vscode-json",
+				"redhat.vscode-yaml",
+				"ms-vscode.test-adapter-converter"
+			]
+		}
+	},
+
+	// Port forwarding for the application
+	"forwardPorts": [8080, 8443, 4306],
+	"portsAttributes": {
+		"8080": {
+			"label": "BoxLang App (HTTP)",
+			"onAutoForward": "notify"
+		},
+		"8443": {
+			"label": "BoxLang App (HTTPS)",
+			"onAutoForward": "ignore"
+		},
+		"4306": {
+			"label": "MySQL Database",
+			"onAutoForward": "ignore"
+		}
+	}
+}

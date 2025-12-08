@@ -1,0 +1,15 @@
+class {
+    function index( event, rc, prc ) {
+        try {
+            var tables = queryExecute( "SHOW TABLES" );
+            writeDump( tables );
+            
+            var tickets = queryExecute( "DESCRIBE tickets" );
+            writeDump( tickets );
+            
+            return "Tables found.";
+        } catch ( any e ) {
+            return "Error: " & e.message & " " & e.detail;
+        }
+    }
+}

@@ -1,0 +1,34 @@
+component {
+    function run() {
+        try {
+            print.line( "Starting DB Setup..." );
+            
+            var schemaPath = resolvePath( "resources/database/schema.sql" );
+            print.line( "Reading schema from: " & schemaPath );
+            
+            if( !fileExists( schemaPath ) ){
+                print.redLine( "Schema file not found!" );
+                return;
+            }
+
+            var schemaSql = fileRead( schemaPath );
+            var statements = listToArray( schemaSql, ";" );
+            
+            // Manually define datasource connection info if not picking up from Application.bx context
+            // But 'box task run' runs in CLI which might not have the same datasource config as web.
+            // We need to verify if CLI has the datasource. 
+            // Usually CLI needs separate config or we pass it.
+            
+            // For now, let's just try to print what we would do or rely on Application.bx if loaded?
+            // CLI loading Application.bx is tricky.
+            
+            // Actually, let's enable the Setup handler to be callable via HTTP properly or just use the web app's functionality.
+            // But since I can't easily curl, I will write a simple .bx script to be run by the server via web request.
+            
+            print.line( "Use the web browser to visit /setup to execute the schema." );
+
+        } catch ( any e ) {
+            print.redLine( "Error: " & e.message );
+        }
+    }
+}

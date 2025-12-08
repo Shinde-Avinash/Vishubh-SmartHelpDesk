@@ -1,0 +1,31 @@
+class {
+    
+    function index( event, rc, prc ){
+        try {
+            var schemaPath = expandPath( "/resources/database/schema.sql" );
+            
+            if( !fileExists( schemaPath ) ){
+                return "Schema file not found at: " & schemaPath;
+            }
+
+            var schemaSql = fileRead( schemaPath );
+            
+            // Simple split by semicolon. Note: this is a basic parser and might break if semicolons are inside strings.
+            // For this schema it should be fine.
+            var statements = listToArray( schemaSql, ";" );
+            
+            for( var sql in statements ){
+                var trimmedSql = trim( sql );
+                if( len( trimmedSql ) ){
+                    queryExecute( trimmedSql );
+                }
+            }
+            
+            fileWrite( expandPath( "/setup_log.txt" ), "Schema executed successfully." );
+            return "Database schema created successfully! <a href='" & event.buildLink('main') & "'>Go to Home</a>";
+        } catch ( any e ) {
+            fileWrite( expandPath( "/setup_log.txt" ), "Error executing schema: " & e.message & " Detail: " & e.detail );
+            return "Error executing schema: " & e.message & " <br> Detail: " & e.detail;
+        }
+    }
+}

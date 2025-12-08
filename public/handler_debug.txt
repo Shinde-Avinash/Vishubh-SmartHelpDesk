@@ -1,0 +1,176 @@
+Entered Tickets.save at {ts '2025-12-05 14:32:33'}Exception: Function [serializeJSON] not foundTeams.delete called at {ts '2025-12-08 06:07:31'} with ID: 12
+Teams.update called at {ts '2025-12-08 06:07:44'} with ID: 12 Name: QA
+Teams.update called at {ts '2025-12-08 06:10:10'} with ID: 12 Name: QA
+Teams.update called at {ts '2025-12-08 06:10:12'} with ID: 12 Name: QA
+Teams.delete called at {ts '2025-12-08 06:10:18'} with ID: 12
+Teams.delete called at {ts '2025-12-08 06:12:08'} with ID: 12
+Teams.delete called at {ts '2025-12-08 06:12:13'} with ID: 12
+Teams.update called at {ts '2025-12-08 06:13:13'} with ID: 12 Name: QAjk
+Teams.update called at {ts '2025-12-08 06:13:14'} with ID: 12 Name: QA
+Teams.delete called at {ts '2025-12-08 06:13:24'} with ID: 12
+Teams.delete called at {ts '2025-12-08 06:14:03'} with ID: 12
+Teams.index: Injected Service is app.models.TeamService
+Teams.index: Injected Service is app.models.TeamService
+Teams.update called at {ts '2025-12-08 06:20:46'} with ID: 12 Name: QA
+Teams.update Error: Method 'updateTeam' not found Detail: 
+Teams.update called at {ts '2025-12-08 06:22:15'} with ID: 12 Name: QA
+Teams.update Error: Method 'updateTeam' not found Detail: 
+Teams.index: Injected Service is app.models.TeamService
+Teams.delete called at {ts '2025-12-08 06:22:25'} with ID: 12
+Teams.delete Error: Method 'deleteTeam' not found Detail: 
+Teams.index: Injected Service is app.models.TeamService
+Teams.delete called at {ts '2025-12-08 06:22:30'} with ID: 12
+Teams.delete Error: Method 'deleteTeam' not found Detail: 
+Teams.index: Injected Service is app.models.TeamService
+Teams.index: Injected Service is app.models.TeamService
+Teams.update called at {ts '2025-12-08 06:24:56'} with ID: 12 Name: QA
+Teams.update Error: Method 'updateTeam' not found Detail: 
+Teams.index: Injected Service is app.models.TeamService
+Teams.update called at {ts '2025-12-08 06:26:07'} with ID: 12 Name: QA
+Teams.update Error: Method 'updateTeam' not found Detail: 
+Teams.update called at {ts '2025-12-08 06:26:09'} with ID: 12 Name: QA
+Teams.update Error: Method 'updateTeam' not found Detail: 
+Teams.index: Injected Service is app.models.TeamService
+Teams.update called at {ts '2025-12-08 06:27:39'} with ID: 12 Name: QA
+Teams.update Error: Method 'updateTeam' not found Detail: 
+Teams.index: Injected Service is app.models.TeamService
+Teams.index: Injected Service is app.models.TeamService
+Teams.update called at {ts '2025-12-08 06:28:08'} with ID: 12 Name: QA
+Teams.update Error: Method 'updateTeam' not found Detail: 
+Teams.index: Injected Service is app.models.TeamService
+Teams.delete called at {ts '2025-12-08 06:28:13'} with ID: 12
+Teams.delete Error: Method 'deleteTeam' not found Detail: 
+Teams.index: Injected Service is app.models.TeamService
+Teams.index: Injected Service is app.models.TeamManagementService
+Teams.update called at {ts '2025-12-08 06:36:48'} with ID: 12 Name: QA
+TeamManagementService.updateTeam called for ID: 12
+Teams.index: Injected Service is app.models.TeamManagementService
+Teams.delete called at {ts '2025-12-08 06:36:53'} with ID: 12
+TeamManagementService.deleteTeam called for ID: 12
+Teams.index: Injected Service is app.models.TeamManagementService
+TicketManagementService check: User 3 (agent) has TeamID: NULL
+TicketManagementService check: User 3 (agent) has TeamID: NULL
+TicketManagementService check: User 3 (agent) has TeamID: NULL
+TicketManagementService check: User 3 (agent) has TeamID: NULL
+TicketManagementService check: User 3 (agent) has TeamID: NULL
+TicketManagementService check: User 3 (agent) has TeamID: NULL
+TicketManagementService check: User 3 (agent) has TeamID: NULL
+TicketManagementService check: User 3 (agent) has TeamID: NULL
+TicketManagementService check: User 3 (agent) has TeamID: NULL
+TicketManagementService check: User 3 (agent) has TeamID: NULL
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+TicketManagementService check: User 3 (agent) has TeamID: NULL
+TicketManagementService check: User 3 (agent) has TeamID: NULL
+TicketManagementService check: User 3 (agent) has TeamID: NULL
+TicketManagementService check: User 3 (agent) has TeamID: NULL
+TicketManagementService check: User 3 (agent) has TeamID: NULL
+TicketManagementService check: User 3 (agent) has TeamID: NULL
+TicketManagementService check: User 3 (agent) has TeamID: NULL
+TicketManagementService check: User 3 (agent) has TeamID: NULL
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+Teams.index: Injected Service is app.models.TeamManagementService
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+Teams.index: Injected Service is app.models.TeamManagementService
+TicketManagementService check: User 6 (agent) has TeamID: NULL
+TicketManagementService check: User 6 (agent) has TeamID: NULL
+TicketManagementService check: User 6 (agent) has TeamID: NULL
+TicketManagementService check: User 6 (agent) has TeamID: NULL
+TicketManagementService check: User 6 (agent) has TeamID: NULL
+TicketManagementService check: User 6 (agent) has TeamID: NULL
+TicketManagementService check: User 6 (agent) has TeamID: NULL
+TicketManagementService check: User 6 (agent) has TeamID: NULL
+TicketManagementService check: User 6 (agent) has TeamID: NULL
+TicketManagementService check: User 6 (agent) has TeamID: NULL
+TicketManagementService check: User 6 (agent) has TeamID: NULL
+TicketManagementService check: User 6 (agent) has TeamID: NULL
+TicketManagementService check: User 3 (agent) has TeamID: NULL
+TicketManagementService check: User 3 (agent) has TeamID: NULL
+TicketManagementService check: User 3 (agent) has TeamID: NULL
+TicketManagementService check: User 3 (agent) has TeamID: NULL
+TicketManagementService check: User 3 (agent) has TeamID: NULL
+TicketManagementService check: User 3 (agent) has TeamID: NULL
+TicketManagementService check: User 3 (agent) has TeamID: NULL
+TicketManagementService check: User 3 (agent) has TeamID: NULL
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+TicketManagementService check: User 3 (agent) has TeamID: NULL
+TicketManagementService check: User 3 (agent) has TeamID: NULL
+TicketManagementService check: User 3 (agent) has TeamID: NULL
+TicketManagementService check: User 3 (agent) has TeamID: NULL
+TicketManagementService check: User 3 (agent) has TeamID: NULL
+TicketManagementService check: User 3 (agent) has TeamID: NULL
+TicketManagementService check: User 3 (agent) has TeamID: NULL
+TicketManagementService check: User 3 (agent) has TeamID: NULL
+TicketManagementService check: User 3 (agent) has TeamID: NULL
+TicketManagementService check: User 3 (agent) has TeamID: NULL
+TicketManagementService check: User 3 (agent) has TeamID: NULL
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+TicketManagementService check: User 3 (agent) has TeamID: NULL
+TicketManagementService check: User 3 (agent) has TeamID: NULL
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+TicketManagementService check: User 3 (agent) has TeamID: 3
+TicketManagementService check: User 3 (agent) has TeamID: 3
+TicketManagementService check: User 3 (agent) has TeamID: 3
+TicketManagementService check: User 3 (agent) has TeamID: 3
+TicketManagementService check: User 3 (agent) has TeamID: 3
+TicketManagementService check: User 3 (agent) has TeamID: 3
+TicketManagementService check: User 3 (agent) has TeamID: 3
+TicketManagementService check: User 3 (agent) has TeamID: 3
+TicketManagementService check: User 3 (agent) has TeamID: 3
+TicketManagementService check: User 3 (agent) has TeamID: 3
+TicketManagementService check: User 3 (agent) has TeamID: 3
+TicketManagementService check: User 3 (agent) has TeamID: 3
+TicketManagementService check: User 3 (agent) has TeamID: 3
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+TicketManagementService check: User 3 (agent) has TeamID: 3
+TicketManagementService check: User 3 (agent) has TeamID: 3
+TicketManagementService check: User 6 (agent) has TeamID: 2
+TicketManagementService check: User 6 (agent) has TeamID: 2
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+TicketManagementService check: User 6 (agent) has TeamID: 2
+TicketManagementService check: User 6 (agent) has TeamID: 2
+TicketManagementService check: User 6 (agent) has TeamID: 2
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+Teams.index: Injected Service is app.models.TeamManagementService
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+Checking .env file at C:\Users\om\Desktop\TEMP_FILES\2-Avinash\ColdFusion\Vishubh SmartHelpDesk\.env... 
+Found key in .env: AIzaS...
+Checking .env file at C:\Users\om\Desktop\TEMP_FILES\2-Avinash\ColdFusion\Vishubh SmartHelpDesk\.env... 
+Found key in .env: AIzaS...
+Checking .env file at C:\Users\om\Desktop\TEMP_FILES\2-Avinash\ColdFusion\Vishubh SmartHelpDesk\.env... 
+Found key in .env: AIzaS...
+Checking .env file at C:\Users\om\Desktop\TEMP_FILES\2-Avinash\ColdFusion\Vishubh SmartHelpDesk\.env... 
+Found key in .env: AIzaS...
+Checking .env file at C:\Users\om\Desktop\TEMP_FILES\2-Avinash\ColdFusion\Vishubh SmartHelpDesk\.env... 
+Found key in .env: AIzaS...
+Checking .env file at C:\Users\om\Desktop\TEMP_FILES\2-Avinash\ColdFusion\Vishubh SmartHelpDesk\.env... 
+Found key in .env: AIzaS...
+Checking .env file at C:\Users\om\Desktop\TEMP_FILES\2-Avinash\ColdFusion\Vishubh SmartHelpDesk\.env... 
+Found key in .env: AIzaS...
+Checking .env file at C:\Users\om\Desktop\TEMP_FILES\2-Avinash\ColdFusion\Vishubh SmartHelpDesk\.env... 
+Found key in .env: AIzaS...
+Checking .env file at C:\Users\om\Desktop\TEMP_FILES\2-Avinash\ColdFusion\Vishubh SmartHelpDesk\.env... 
+Found key in .env: AIzaS...
+Gemini API Error: Code: 404, Message: models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+Checking .env file at C:\Users\om\Desktop\TEMP_FILES\2-Avinash\ColdFusion\Vishubh SmartHelpDesk\.env... 
+Found key in .env: AIzaS...
+Checking .env file at C:\Users\om\Desktop\TEMP_FILES\2-Avinash\ColdFusion\Vishubh SmartHelpDesk\.env... 
+Found key in .env: AIzaS...
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
