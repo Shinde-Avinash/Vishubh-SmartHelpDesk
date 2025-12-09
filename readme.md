@@ -3,6 +3,7 @@
 Vishubh SmartHelpDesk is a modern, enterprise-grade help desk application designed to streamline customer support and internal ticketing workflows. Built on the robust **ColdBox 8** framework and running on the **BoxLang** runtime, it combines performance with developer productivity.
 
 ## ✨ Key Features
+<img width="1348" height="589" alt="image" src="https://github.com/user-attachments/assets/b6090190-5aad-4ec2-b5d4-45eef2706692" />
 
 -   **🎫 Smart Ticket Management**:
     -   Create, track, and manage support tickets efficiently.
