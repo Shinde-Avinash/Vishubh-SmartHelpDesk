@@ -38,7 +38,7 @@
                     <a href="#event.buildLink('main.about')#" class="nav-link">About</a>
                     <cfif structKeyExists( session, "user" )>
                         <a href="#event.buildLink('tickets.index')#" class="nav-link">My Tickets</a>
-                         <cfif session.user.role == "admin" || session.user.role == "agent">
+                         <cfif session.user.role == "admin" || session.user.role == "agent" || session.user.role == "team_lead">
                             <a href="#event.buildLink('dashboard.index')#" class="nav-link">Dashboard</a>
                         </cfif>
                     </cfif>
@@ -51,7 +51,7 @@
 
                     <cfif structKeyExists( session, "user" )>
                          <div class="flex items-center gap-2">
-                            <span style="font-weight: 600; font-size: 0.9rem;">#session.user.username#</span>
+                            <a href="#event.buildLink('main.profile')#" style="font-weight: 600; font-size: 0.9rem; text-decoration: none; color: inherit;">#session.user.username#</a>
                             <a href="#event.buildLink('sessions.delete')#" class="btn btn-outline" style="padding: 0.4rem 0.8rem; font-size: 0.85rem;">Logout</a>
                         </div>
                     <cfelse>

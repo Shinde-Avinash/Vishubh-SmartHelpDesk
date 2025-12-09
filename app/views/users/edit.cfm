@@ -30,6 +30,7 @@
                     <select name="role" id="role" class="form-control" required>
                         <option value="user" #(prc.user.role == 'user' ? 'selected' : '')#>User</option>
                         <option value="agent" #(prc.user.role == 'agent' ? 'selected' : '')#>Agent</option>
+                        <option value="team_lead" #(prc.user.role == 'team_lead' ? 'selected' : '')#>Team Lead</option>
                         <option value="admin" #(prc.user.role == 'admin' ? 'selected' : '')#>Admin</option>
                     </select>
                 </div>

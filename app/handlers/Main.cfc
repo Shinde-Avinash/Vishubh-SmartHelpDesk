@@ -1,5 +1,7 @@
 component extends="coldbox.system.EventHandler" {
 
+	property name="userService" inject="UserService";
+
 	/**
 	 * Default Action
 	 */
@@ -52,6 +54,31 @@ component extends="coldbox.system.EventHandler" {
 		var applicationScope = event.getValue( "applicationReference" );
 	}
 
+	function profile( event, rc, prc ){
+		if ( !structKeyExists( session, "user" ) ) {
+			relocate( "sessions.new" );
+			return;
+		}
+		
+		// Refresh user data from DB to ensure up-to-date info
+		var userService = new app.models.UserService();
+		prc.user = userService.getUserById( session.user.id );
+		
+		// Get Team info if agent/team_lead
+		if ( listFindNoCase( "agent,team_lead", prc.user.role ) ) {
+			prc.teamId = new app.models.UserManagementService().getAgentTeam( prc.user.id );
+			if ( len( prc.teamId ) ) {
+				var teamService = new app.models.TeamManagementService();
+				var team = teamService.getTeamById( prc.teamId );
+				if ( !isNull( team ) ) {
+					prc.teamName = team.name;
+				}
+			}
+		}
+		
+		event.setView( "main/profile" );
+	}
+	
 	function onException( event, rc, prc ){
 		event.setHTTPHeader( statusCode = 500 );
 		// Grab Exception From private request collection, placed by ColdBox Exception Handling

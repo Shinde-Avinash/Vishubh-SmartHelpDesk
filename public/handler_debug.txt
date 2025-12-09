@@ -247,3 +247,35 @@ TeamManagementService.deleteTeam called for ID: 15
 Teams.index: Injected Service is app.models.TeamManagementService
 TicketManagementService check: User 2 (admin) - No filtering OR Admin
 TicketManagementService check: User 2 (admin) - No filtering OR Admin
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+TicketManagementService check: User 4 (team_lead) has TeamID: 4
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+TicketManagementService check: User 4 (team_lead) has TeamID: 4
+TicketManagementService check: User 4 (team_lead) has TeamID: 4
+TicketManagementService check: User 4 (team_lead) has TeamID: 4
+TicketManagementService check: User 4 (team_lead) has TeamID: 4
+TicketManagementService check: User 4 (team_lead) has TeamID: 4
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+TicketManagementService check: User 3 (team_lead) has TeamID: 2
+TicketManagementService check: User 3 (team_lead) has TeamID: 2
+TicketManagementService check: User 3 (team_lead) has TeamID: 2
+TicketManagementService check: User 3 (team_lead) has TeamID: 2
+TicketManagementService check: User 6 (agent) has TeamID: 2
+TicketManagementService check: User 6 (agent) has TeamID: 2
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+Teams.index: Injected Service is app.models.TeamManagementService
+Teams.index: Injected Service is app.models.TeamManagementService
+Teams.update called at {ts '2025-12-09 14:51:31'} with ID: 16 Name: test team
+TeamManagementService.updateTeam called for ID: 16
+Teams.index: Injected Service is app.models.TeamManagementService
+Teams.update called at {ts '2025-12-09 14:52:20'} with ID: 16 Name: test team
+TeamManagementService.updateTeam called for ID: 16
+Teams.index: Injected Service is app.models.TeamManagementService
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
