@@ -23,8 +23,9 @@ component {
                 phone: rc.phone
             });
             
+            fileAppend( expandPath("/registrations_debug.log"), "User created: " & rc.username & " at " & now() & chr(13) & chr(10) );
             flash.put( "message", "Registration successful! Please login." );
-            relocate( "sessions.new" );
+            relocate( event="sessions.new" );
         } catch ( any e ) {
             flash.put( "error", "Error creating account: " & e.message );
             relocate( "registrations.new" );

@@ -112,4 +112,10 @@ component singleton {
              return "System Error: " & e.message;
         }
     }
+
+    function analyzeTicket( required string title, required string description ){
+        var prompt = "Analyze this support ticket. Provide a brief summary, potential technical category, and suggested initial troubleshooting steps.\n\nTitle: " & arguments.title & "\nDescription: " & arguments.description;
+        return generateResponse( prompt );
+    }
+
 }

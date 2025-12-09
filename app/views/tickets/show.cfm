@@ -180,7 +180,7 @@
                     <div class="mb-4">
                         <label class="form-label text-muted" style="font-size: 0.85rem;">Detected Sentiment</label>
                         <!--- JSON Check for safety --->
-                        <cfif structKeyExists(analysis, "sentiment")>
+                        <cfif isStruct(analysis) && structKeyExists(analysis, "sentiment")>
                             <div class="flex items-center gap-2" style="font-weight: 600;">
                                 <cfif analysis.sentiment == "Positive">
                                     <i class="fas fa-smile text-success"></i>

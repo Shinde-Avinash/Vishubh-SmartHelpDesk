@@ -36,8 +36,14 @@ component {
             return;
         }
 
+        // Truncate title to fit database limit
+        if ( len( rc.title ) > 255 ) {
+            rc.title = left( rc.title, 255 );
+        }
+
         // AI Analysis
-        var analysis = aiService.analyzeTicket( rc.title, rc.description );
+        var localAiService = new app.models.AIService();
+        var analysis = localAiService.analyzeTicket( rc.title, rc.description );
         
         var uid = new app.models.TicketManagementService().create({
             title: rc.title,
@@ -116,12 +122,14 @@ component {
     function status( event, rc, prc ){
         if ( session.user.role != 'admin' && session.user.role != 'agent' && session.user.role != 'team_lead' ) return;
         
+        var ticketService = new app.models.TicketManagementService();
         ticketService.updateStatus( rc.uid, rc.status );
         flash.put( "message", "Ticket status updated." );
         relocate( event="tickets.show", queryString="uid=#rc.uid#" );
     }
 
     function analyze( event, rc, prc ){
+        var ticketService = new app.models.TicketManagementService();
         var analysis = ticketService.analyzeTicket( rc.uid, "" );
         
         // Save as a message or just flash it? Better to add as a private note or internal message

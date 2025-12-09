@@ -197,3 +197,53 @@ Teams.delete called at {ts '2025-12-09 04:10:38'} with ID: 13
 TeamManagementService.deleteTeam called for ID: 13
 Teams.index: Injected Service is app.models.TeamManagementService
 TicketManagementService check: User 2 (admin) - No filtering OR Admin
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+TicketManagementService check: User 3 (agent) has TeamID: 3
+TicketManagementService check: User 3 (agent) has TeamID: 3
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+Teams.index: Injected Service is app.models.TeamManagementService
+Teams.index: Injected Service is app.models.TeamManagementService
+Teams.update called at {ts '2025-12-09 10:43:09'} with ID: 14 Name: test team
+TeamManagementService.updateTeam called for ID: 14
+Teams.index: Injected Service is app.models.TeamManagementService
+Teams.delete called at {ts '2025-12-09 10:43:14'} with ID: 14
+TeamManagementService.deleteTeam called for ID: 14
+Teams.index: Injected Service is app.models.TeamManagementService
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+TicketManagementService check: User 3 (agent) has TeamID: 3
+TicketManagementService check: User 3 (agent) has TeamID: 3
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+TicketManagementService check: User 4 (agent) has TeamID: 4
+TicketManagementService check: User 4 (agent) has TeamID: 4
+TicketManagementService check: User 4 (agent) has TeamID: 4
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+Teams.index: Injected Service is app.models.TeamManagementService
+Teams.index: Injected Service is app.models.TeamManagementService
+Teams.update called at {ts '2025-12-09 11:01:28'} with ID: 15 Name: test team
+TeamManagementService.updateTeam called for ID: 15
+Teams.index: Injected Service is app.models.TeamManagementService
+Teams.delete called at {ts '2025-12-09 11:01:34'} with ID: 15
+TeamManagementService.deleteTeam called for ID: 15
+Teams.index: Injected Service is app.models.TeamManagementService
+TicketManagementService check: User 2 (admin) - No filtering OR Admin
+TicketManagementService check: User 2 (admin) - No filtering OR Admin

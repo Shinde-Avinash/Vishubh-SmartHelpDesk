@@ -47,8 +47,8 @@
         <div class="card-header">
             <h4 class="card-title">Recent Activity</h4>
         </div>
-        <div class="table-container">
-            <table>
+        <div class="table-container" style="overflow-x: auto;">
+            <table class="table table-sm" style="font-size: 0.85rem;">
                 <thead>
                     <tr>
                         <th>ID</th>
@@ -62,20 +62,22 @@
                 <tbody>
                     <cfloop array="#prc.recentTickets#" item="ticket">
                         <tr>
-                            <td>#ticket.ticket_uid#</td>
-                            <td>#ticket.title#</td>
+                            <td title="#ticket.ticket_uid#">
+                                #left(ticket.ticket_uid, 8)#...#right(ticket.ticket_uid, 4)#
+                            </td>
+                            <td>#left(ticket.title, 30)#<cfif len(ticket.title) gt 30>...</cfif></td>
                             <td>#ticket.created_by_name#</td>
                             <td>
                                 <cfset badgeClass = "badge-primary">
                                 <cfif ticket.status eq "Resolved"><cfset badgeClass = "badge-success"></cfif>
                                 <cfif ticket.status eq "Open"><cfset badgeClass = "badge-warning"></cfif>
-                                <span class="badge #badgeClass#">
+                                <span class="badge #badgeClass#" style="font-size: 0.75rem; padding: 0.2rem 0.5rem;">
                                     #ticket.status#
                                 </span>
                             </td>
                             <td>#ticket.urgency#</td>
-                            <td>
-                                <a href="#event.buildLink('tickets.show', {uid: ticket.ticket_uid})#" class="btn btn-sm btn-outline">View</a>
+                            <td style="padding: 0.25rem;">
+                                <a href="#event.buildLink('tickets.show', {uid: ticket.ticket_uid})#" class="btn btn-sm btn-outline" style="font-size: 0.75rem; padding: 0.2rem 0.5rem;">View</a>
                             </td>
                         </tr>
                     </cfloop>
