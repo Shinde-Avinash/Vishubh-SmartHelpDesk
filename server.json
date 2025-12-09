@@ -1,5 +1,5 @@
 {
-    "name":"My ColdBox App",
+    "name":"VishubhSmartHelpDesk",
     "app":{
         "cfengine":"boxlang@1",
         "engineConfigFile":"./runtime/boxlang.json"
@@ -21,6 +21,9 @@
             "/coldbox/system/exceptions":"./lib/coldbox/system/exceptions/",
             "/tests":"./tests/",
             "/resources":"./resources/"
+        },
+        "http":{
+            "port":"8081"
         }
     },
     "scripts":{

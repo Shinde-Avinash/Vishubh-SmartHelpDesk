@@ -1,6 +1,6 @@
 component singleton {
     
-    property name="apiKey" inject="page:GEMINI_API_KEY"; // Or read from env
+    property name="apiKey"; // Or read from env
 
     function init(){
         variables.apiKey = server.system.environment.GEMINI_API_KEY ?: "";

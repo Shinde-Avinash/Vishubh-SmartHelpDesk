@@ -23,6 +23,7 @@ tests/results/**
 **/node_modules/*
 npm-debug.log
 yarn-error.log
+public/debug_*.cfm
 
 ## Ignored Dependencies
 .devcontainer/.db/**

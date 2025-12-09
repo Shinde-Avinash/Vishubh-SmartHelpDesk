@@ -11,7 +11,8 @@
     "shortDescription":"This is the default ColdBox Application Template for BoxLang projects.",
     "ignore":[],
     "dependencies":{
-        "coldbox":"^8.0.0"
+        "coldbox":"^8.0.0",
+        "bx-mysql":"^1.0.1+7"
     },
     "devDependencies":{
         "route-visualizer":"*",
@@ -25,7 +26,8 @@
     "installPaths":{
         "coldbox":"lib/coldbox/",
         "testbox":"lib/testbox/",
-        "route-visualizer":"lib/modules/route-visualizer/"
+        "route-visualizer":"lib/modules/route-visualizer/",
+        "bx-mysql":"bx-mysql/"
     },
     "scripts":{
         "format":"cfformat run app/,tests/specs/,*.bx --overwrite --verbose",

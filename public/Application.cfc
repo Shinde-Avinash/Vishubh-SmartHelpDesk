@@ -26,7 +26,7 @@ component {
 	 * --------------------------------------------------------------------------
 	 */
 	this.javaSettings = {
-		loadPaths = [ "lib/java" ],
+		loadPaths = [ "../lib/java" ],
 		reloadOnChange = true
 	};
 
@@ -70,7 +70,6 @@ component {
 	this.datasources = {
 		"Vishubh_SmartHelpDeskDB" = {
 			"driver"   = "MySQL",
-            "class"    = "com.mysql.cj.jdbc.Driver",
 			"url"      = "jdbc:mysql://127.0.0.1:3306/Vishubh_SmartHelpDeskDB?useSSL=false&useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&useLegacyDatetimeCode=true&allowPublicKeyRetrieval=true&createDatabaseIfNotExist=true",
 			"username" = "avi10",
 			"password" = "avi10"
@@ -81,12 +80,6 @@ component {
 	 * Fires when the application starts
 	 */
 	public boolean function onApplicationStart() {
-		try {
-			createObject( "java", "com.mysql.cj.jdbc.Driver" );
-		} catch( any e ) {
-			systemOutput( "Failed to load MySQL Driver: " & e.message, true );
-		}
-
 		// Auto-migrate schema
 		try {
 			var schemaPath = expandPath( "/resources/database/schema.sql" );
